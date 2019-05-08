@@ -9,12 +9,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import it from '@angular/common/locales/it';
+import { ListComponent } from './list/list.component';
+import { FormComponent } from './form/form.component';
+import { DetailComponent } from './detail/detail.component';
 
 registerLocaleData(it);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListComponent,
+    FormComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
