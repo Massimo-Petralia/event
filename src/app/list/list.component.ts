@@ -23,7 +23,6 @@ export class ListComponent implements OnInit {
   }
   getData() {
     this.http.get(this.dbUrl).subscribe((_events: Event[])=>{
-      console.log(_events);
       this.events = _events
     })
   }
