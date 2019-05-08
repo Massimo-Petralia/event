@@ -11,6 +11,7 @@ import { registerLocaleData } from '@angular/common';
 import it from '@angular/common/locales/it';
 import { ListComponent } from './list/list.component';
 import { FormComponent } from './form/form.component';
+import { DetailComponent } from './detail/detail.component';
 
 registerLocaleData(it);
 
@@ -18,7 +19,8 @@ registerLocaleData(it);
   declarations: [
     AppComponent,
     ListComponent,
-    FormComponent
+    FormComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
