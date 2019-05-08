@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class ListComponent implements OnInit {
   dbUrl = 'http://localhost:3000/events';
   events: Event[];
+  eventSelected: Event
 
   constructor(private http: HttpClient) { }
 
@@ -19,5 +20,9 @@ export class ListComponent implements OnInit {
     this.http.get(this.dbUrl).subscribe((_events: Event[])=>{
       this.events = _events
     })
+  }
+  selectedEvent(event: Event){
+    this.eventSelected = event;
+    console.log(this.eventSelected);
   }
 }
