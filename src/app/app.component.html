@@ -1,14 +1,15 @@
-<!-- NG-ZORRO 
-<a href="https://github.com/NG-ZORRO/ng-zorro-antd" target="_blank" style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;">
-  <img height="300" src="https://img.alicdn.com/tfs/TB1X.qJJgHqK1RjSZFgXXa7JXXa-89-131.svg">
-</a>-->
-<header nz-row ><h1>{{title}}</h1></header>
+<header nz-row>
+  <h1>{{title}}</h1>
+</header>
 <div nz-row [nzGutter]="15">
   <nav nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="12" nzXl="12">
     <app-list></app-list>
   </nav>
-  <div nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="12" nzXl="12">
-    <app-form></app-form>
-  </div>
+  <section nz-col nzXs="24" nzSm="24" nzMd="24" nzLg="12" nzXl="12">
+    <app-detail></app-detail>
+  </section>
+</div>
+<div nz-row>
+  <app-form></app-form>
 </div>
 <footer nz-row>footer</footer>
